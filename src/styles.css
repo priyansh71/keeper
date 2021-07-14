@@ -20,7 +20,7 @@ body {
   background-size: 25px 25px;
   border-radius: 10px;
   box-shadow: 4px 3px 7px 2px #00000040;
-  padding: 2em 4em;
+  padding: 2em 3.5em;
   box-sizing: border-box;
   overflow: scroll;
   margin-bottom: 0.5em;
@@ -97,13 +97,12 @@ form input:focus {
 span {
   font-size: 1.2em;
   font-family: "Architects Daughter", cursive;
-  transform: translateX(-30%);
 }
 li {
   margin: 12px 0;
 }
 #done {
-  transform: translateX(120%);
+  transform: translateX(80%);
   position: relative;
   margin: 0 5px;
   font-size: 1.2em;
@@ -121,7 +120,7 @@ li {
 }
 
 #remove {
-  transform: translateX(120%);
+  transform: translateX(80%);
   position: relative;
   margin: 0 5px;
   font-size: 1.2em;
