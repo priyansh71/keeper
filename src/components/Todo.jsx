@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "../styles.css";
+import ToDoItem from "./ToDoItem";
 
 export default function Todo() {
   let [A, setA] = useState([]);
   const [task, setTask] = useState("");
+
   const handlechange = (event) => {
     const value = event.target.value;
     setTask(value);
@@ -12,25 +14,17 @@ export default function Todo() {
     event.preventDefault();
     setA((prev) => {
       return [...prev, task];
-    });
+    })
+    setTask("");
   };
 
-  const handleremove = (event) => {
-    let remove = event.target.className;
-    let Ar = A.filter((x) => {
-      return A.indexOf(x) != remove;
-    });
-    setA(Ar);
-  };
-
-  const Done = (event) => {
-    let remove = event.target.className;
-    let Ad = A.filter((x) => {
-      return A.indexOf(x) != remove;
-    });
-    setTimeout(() => setA(Ad), 1000);
-  };
-
+ const handleremove = (id) =>{
+    setA(prev => {
+      return prev.filter((task,index) => {
+        return index !== id;
+    })
+  })
+  }
   return (
     <div className="container" id="fancyscroll">
       <div className="heading">
@@ -51,27 +45,8 @@ export default function Todo() {
       </form>
       <div>
         <ul>
-          {A.map((item) => (
-            <div key={A.indexOf(item)} className=" list">
-              <li>
-                <span>{item}</span>
-                <button
-                  id="done"
-                  className={A.indexOf(item)}
-                  onClick={Done}
-                  type="submit"
-                >
-                  ✓
-                </button>
-                <button
-                  id="remove"
-                  className={A.indexOf(item)}
-                  onClick={handleremove}
-                >
-                  ✘
-                </button>
-              </li>
-            </div>
+          {A.map((item,index) => (
+           <ToDoItem key={index} id={index} text={item} onRemove={handleremove}/>
           ))}
         </ul>
       </div>
