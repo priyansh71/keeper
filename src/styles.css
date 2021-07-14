@@ -1,5 +1,5 @@
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding: 0.8rem;
   margin-top: 2em;
@@ -24,6 +24,7 @@ body {
   box-sizing: border-box;
   overflow: scroll;
   margin-bottom: 0.5em;
+  max-width: 80vw;
 }
 .heading {
   display: flex;
@@ -94,19 +95,18 @@ form input:focus {
   background-color: #44295a;
 }
 
-span {
+.list {
+  text-align: left;
+  position: relative;
   font-size: 1.2em;
-  font-family: "Architects Daughter", cursive;
-}
-li {
-  margin: 12px 0;
+  margin: 15px;
 }
 #done {
-  transform: translateX(80%);
+  transform: translateX(55px);
   position: relative;
-  margin: 0 5px;
-  font-size: 1.2em;
-  padding: 0.3em 0.5em;
+  margin: 0px 10px;
+  font-size: 1.1em;
+  padding: 0.3em 0.3em;
   border: 2px solid #17af10;
   font-family: "Architects Daughter", cursive;
   border-radius: 5px;
@@ -120,14 +120,14 @@ li {
 }
 
 #remove {
-  transform: translateX(80%);
   position: relative;
-  margin: 0 5px;
-  font-size: 1.2em;
-  padding: 0.3em 0.5em;
+  transform: translateX(50px);
+  margin: 0px 10px;
+  font-size: 1.1em;
+  padding: 0.3em 0.3em;
   border: 2px solid #cf081a;
   font-family: "Architects Daughter", cursive;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: transparent;
   color: #cf081a;
 }
@@ -137,7 +137,3 @@ li {
   color: whitesmoke;
 }
 
-.green {
-  color: green;
-  font-size: 1.2em;
-}
