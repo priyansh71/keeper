@@ -1,21 +1,25 @@
 import React, { useState } from "react";
 
 const ToDoItem = (props) => {
-    const [done, setdone] = useState(false)
+    const [done, setDone] = useState(false)
 
     const handledone = () => {
-        setdone((prev) => !prev)
+        setDone((prev) => !prev)
     }
 return (
-    <div className="list" >
+<div className="list" >
     <li>
-       <span style={{ textDecoration : done ? "line-through" : "none"}}> {props.text}</span>
+        <span style={{ textDecoration : done ? "line-through" : "none"}}> {props.text}</span>
+        <span>
     <button onClick={ () => 
-    {props.onRemove(props.id);
-    }} id="remove">✘</button>
-    <button onClick={handledone}  id="done" >✓</button>
-        </li>
-  </div>
+        {props.onRemove(props.id);
+        }} id="remove">✘
+    </button>
+    <button onClick={handledone}  id="done" >✓
+    </button>
+        </span>
+    </li>
+</div>
 )}
 
 export default ToDoItem;

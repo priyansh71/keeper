@@ -100,31 +100,32 @@ form input:focus {
   position: relative;
   font-size: 1.2em;
   margin: 15px;
+  padding: -30px;
 }
 #done {
-  transform: translateX(55px);
+  transform: translateX(52px);
   position: relative;
-  margin: 0px 10px;
+  margin: 0px 4px;
   font-size: 1.1em;
-  padding: 0.3em 0.3em;
-  border: 2px solid #17af10;
+  padding: 0.2em 0.5em;
+  border: 2px solid #13610f;
   font-family: "Architects Daughter", cursive;
   border-radius: 5px;
   background-color: transparent;
-  color: #17af10;
+  color: #13610f;
 }
 
 #done:hover {
-  background-color: #17af10;
+  background-color: #13610f;
   color: whitesmoke;
 }
 
 #remove {
   position: relative;
   transform: translateX(50px);
-  margin: 0px 10px;
+  margin: 0px 4px;
   font-size: 1.1em;
-  padding: 0.3em 0.3em;
+  padding: 0.2em 0.5em;
   border: 2px solid #cf081a;
   font-family: "Architects Daughter", cursive;
   border-radius: 4px;
