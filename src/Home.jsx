@@ -14,6 +14,10 @@ const App = () =>{
         <Link to="/todo">
             Todo
         </Link>
+        <br />
+        <Link to="/keep">
+            Keep
+        </Link>
          
         
         </div>
