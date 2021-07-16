@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
-import "./styles.css"
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -23,9 +22,10 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header />
       <CreateArea onDone={handledone} />
+      <div className="mt-8 grid xsm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-full ml-7 md:mr-0 overflow-x-hidden" >
       {notes.map((note, index) => (
         <Note
           key={index}
@@ -35,6 +35,7 @@ function App() {
           onDelete={handledelete}
         />
       ))}
+      </div>
     </div>
   );
 }
