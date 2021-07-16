@@ -1,5 +1,5 @@
 {
-  "homepage": "http://priyansh71.github.io/taskManager",
+  "homepage": "http://priyansh71.github.io/",
   "name": "to-do",
   "version": "1.0.0",
   "description": "",
@@ -20,13 +20,12 @@
     "typescript": "3.3.3"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
-    
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
