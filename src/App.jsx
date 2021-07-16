@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const App = () =>{
     return(
-        <div>
          <Router>
             <Switch>
                 <Route path="/todo" component={Todo} />
@@ -14,7 +13,6 @@ const App = () =>{
                 <Route path="/keep" component={Keep} />
             </Switch>
         </Router>
-        </div>
 
     )
 }
