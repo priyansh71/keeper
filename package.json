@@ -5,18 +5,22 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@craco/craco": "^6.2.0",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3"
   },
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.36",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4",
     "typescript": "3.3.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "browserslist": [
