@@ -14,13 +14,15 @@ function CreateArea(props) {
   };
 
   return (
-    <div>
-      <form>
+    <center>
+      <form class="grid grid-cols-1" style={{fontFamily : "Architects Daughter"}}>
         <input
+        
           name="title"
           placeholder="Title"
           onChange={handlechange1}
           value={title}
+          className="input mx-auto xsm:w-11/12 sm:w-5/6 md:w-1/3 border-b-0 text-gray-900 py-2"
         />
         <textarea
           onChange={handlechange2}
@@ -28,6 +30,7 @@ function CreateArea(props) {
           placeholder="Take a note..."
           rows="3"
           value={content}
+          className="input mx-auto xsm:w-11/12 sm:w-5/6 md:w-1/3 border-t-0 text-gray-500 py-2"
         />
         <button
           onClick={(e) => {
@@ -36,11 +39,12 @@ function CreateArea(props) {
             setTitle("");
             setContent("");
           }}
+          className="btn py-1 border-pink-500  hover:bg-pink-500 btn text-pink-500 bg-white mx-auto"
         >
-          Add
+        <i class="fas fa-check"></i>
         </button>
       </form>
-    </div>
+    </center>
   );
 }
 
