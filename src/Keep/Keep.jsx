@@ -7,10 +7,7 @@ function App() {
   const [notes, setNotes] = useState([]);
 
   const handledone = (title, content) => {
-    console.log(title);
-    console.log(content);
     setNotes((prev) => [...prev, { title: [title], content: [content] }]);
-    console.log(notes);
   };
 
   const handledelete = (id) => {
