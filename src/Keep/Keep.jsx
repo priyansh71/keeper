@@ -3,7 +3,7 @@ import Header from "./Header";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
 
-function App() {
+function Keep() {
   const [notes, setNotes] = useState([]);
 
   const handledone = (title, content) => {
@@ -40,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default Keep;
