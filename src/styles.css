@@ -3,11 +3,9 @@
     margin: 0;
     box-sizing: border-box;
   }
-  html {
-    font-family: "Montserrat", sans-serif;
-  }
+
   body {
-    background: #eee;
+    background: rgb(247, 247, 247);
     padding: 0 16px;
   }
   
@@ -27,9 +25,7 @@
   }
   
   .note {
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 2px 5px #ccc;
+    border-radius: 12px;
     padding: 10px;
     width: 300px;
     margin: 16px;
@@ -39,11 +35,11 @@
   }
   .note h1 {
     font-size: 1.3em;
-    margin: 0.5em 0.1em;
+    margin: 0.4em 0.2em;
   }
   .note p {
     font-size: 1.1em;
-  margin: 0.3em 0.15em;
+    margin: 0.2em 0.3em;
     white-space: pre-wrap;
     word-wrap: break-word;
     color:#444;
@@ -53,10 +49,18 @@
     position: relative;
     float: right;
     margin: 10px;
+    font-size: 0.89em;
     background-color: white;
     border: none;
     cursor: pointer;
     outline: none;
+  }
+
+  .note span{
+    float: right;
+    margin: 22px 5px;
+    font-size: 0.93em;
+    color: rgb(92, 91, 91)
   }
   
   form.create-note {
@@ -70,7 +74,16 @@
     border-radius: 7px;
     box-shadow: 0 1px 5px rgb(138, 137, 137);
   }
-  form.create-note input,
+  form.create-note input {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+    color: black
+  }
   form.create-note textarea {
     width: 100%;
     border: none;
@@ -79,6 +92,7 @@
     font-size: 1.2em;
     font-family: inherit;
     resize: none;
+    color: rgb(101, 100, 100);
   }
   form.create-note button {
     position: absolute;
@@ -93,4 +107,15 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     outline: none;
+  }
+
+  footer {
+    position: absolute;
+    text-align: right;
+    bottom: 0;
+    width: 95%;
+    margin-bottom: 3px;
+    height: 2.5rem;
+    font-size: 1.5em;
+    font-family: "Architects Daughter";
   }

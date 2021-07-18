@@ -2,15 +2,13 @@ import React, { useState } from "react";
 import Header from "./Header";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
+import Time from "./Time";
 
 function Keep() {
   const [notes, setNotes] = useState([]);
 
   const handledone = (title, content) => {
-    console.log(title);
-    console.log(content);
     setNotes((prev) => [...prev, { title: [title], content: [content] }]);
-    console.log(notes);
   };
 
   const handledelete = (id) => {
@@ -36,6 +34,7 @@ function Keep() {
         />
       ))}
       </div>
+      <Time />
     </div>
   );
 }
