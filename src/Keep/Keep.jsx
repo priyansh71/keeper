@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect } from "react";
 import Header from "./Header";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
 import Time from "./Time";
 
 function Keep() {
-  const [notes, setNotes] = useState([]);
+  const array = JSON.parse(localStorage.getItem("Note"))
+  const [notes, setNotes] = useState(array ? array : []);
 
-  const handledone = (title, content) => {
-    setNotes((prev) => [...prev, { title: [title], content: [content] }]);
+  const handledone = (title, content, time , creationDate) => {
+    setNotes((prev) => [...prev, { title: [title]
+      , content: [content] 
+      , time: [time] 
+      , creationDate : [creationDate]  
+    }]);
   };
 
   const handledelete = (id) => {
@@ -17,7 +22,11 @@ function Keep() {
         return id !== index;
       });
     });
-  };
+  };  
+
+  useEffect(() => {
+   localStorage.setItem("Note", JSON.stringify(notes)) ;
+  }, [notes])
 
   return (
     <div>
@@ -30,6 +39,8 @@ function Keep() {
           id={index}
           title={note.title}
           content={note.content}
+          time={note.time}
+          date={note.creationDate}
           onDelete={handledelete}
         />
       ))}

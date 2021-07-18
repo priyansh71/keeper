@@ -5,8 +5,16 @@ import Zoom from '@material-ui/core/Zoom';
 
 
 function CreateArea(props) {
+  const date = new Date();
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const day = date.getDate();
+  const month = date.getMonth();
+
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  let [time, setTime] = useState("");
+  let [creationDate, setCreationDate] = useState("");
   const [expand, setExpand] = useState(false);
 
   const handlechange1 = (event) => {
@@ -21,6 +29,14 @@ function CreateArea(props) {
     setExpand(true)
   }
 
+  const handletime = (a, b) =>{
+    time = a + ":" + b;
+  }
+
+  const handledate = (c, d) =>{
+    creationDate = c + "/" + d;
+  }
+
   return (
     <center>
       <form  className="create-note">
@@ -30,6 +46,7 @@ function CreateArea(props) {
         placeholder="Title"
         onChange={handlechange1}
         value={title}
+        spellCheck={false}
         autoFocus
       /> : null }
         
@@ -38,16 +55,20 @@ function CreateArea(props) {
           onChange={handlechange2}
           name="content"
           placeholder="Take a note..."
-          rows={expand ? 3 : 1}
+          rows={expand ? 4 : 1}
           value={content}
+          spellCheck={false}
         />
-        <Zoom in={expand} timeout={ {enter : "800ms"}} >
+        <Zoom in={expand} timeout={{ enter :"800ms" }} >
         <Fab
-          onClick={(e) => {
-            e.preventDefault();
-            props.onDone(title, content);
+          onClick={() => {
+            handletime(hours,minutes);
+            handledate(day,month);
+            props.onDone(title, content, time, creationDate);
             setTitle("");
             setContent("");
+            setTime("")
+            setCreationDate("")
           }}
           color="secondary"
         >
