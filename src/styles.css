@@ -28,7 +28,7 @@
     border-radius: 12px;
     padding: 10px;
     width: 300px;
-    margin: 16px;
+    margin: 20px;
     float: left;
     font-size: 1.3em;
     font-family: 'Architects Daughter';
@@ -36,6 +36,8 @@
   .note h1 {
     font-size: 1.3em;
     margin: 0.4em 0.2em;
+    padding: 3px 9px;
+
   }
   .note p {
     font-size: 1.1em;
@@ -43,26 +45,40 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     color:#444;
+    padding: 4px 10px;
   }
   
   .note button {
     position: relative;
     float: right;
     margin: 10px;
-    font-size: 0.89em;
+    font-size: 0.866em;
     background-color: white;
     border: none;
     cursor: pointer;
     outline: none;
   }
 
-  .note span{
+  .note .time{
     float: right;
-    margin: 22px 5px;
+    margin: 30px 5px 4px 5px;
     font-size: 0.93em;
-    color: rgb(92, 91, 91)
+    color: rgb(92, 91, 91);
+    font-family: "Kaushan Script";
+
   }
-  
+  .note .date{
+    position: relative;
+    top:0;
+    float: right;
+    margin: 0px 5px;
+    padding: 4px;
+    font-size: 1em;
+    color: rgb(22, 22, 22);
+    font-family: "Kaushan Script";
+  }
+
+
   form.create-note {
     font-family: 'Architects Daughter';
     position: relative;
@@ -87,7 +103,7 @@
   form.create-note textarea {
     width: 100%;
     border: none;
-    padding: 4px;
+    padding: 6px;
     outline: none;
     font-size: 1.2em;
     font-family: inherit;
@@ -117,5 +133,5 @@
     margin-bottom: 3px;
     height: 2.5rem;
     font-size: 1.5em;
-    font-family: "Architects Daughter";
+    font-family: "Kaushan Script";
   }
