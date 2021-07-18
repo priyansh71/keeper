@@ -30,6 +30,7 @@ function CreateArea(props) {
         placeholder="Title"
         onChange={handlechange1}
         value={title}
+        autoFocus
       /> : null }
         
         <textarea
