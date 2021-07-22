@@ -12,9 +12,9 @@ const Time = () => {
   setInterval(setter, 1000);
 
     return(
-        <footer>
+      <div className="footer">
             {current}
-        </footer>
+      </div>
     )
 
 }

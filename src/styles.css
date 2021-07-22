@@ -14,7 +14,7 @@
     margin: auto -16px;
     padding: 16px 32px;
     font-size: 1.3em;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
   }
   
   header span {
@@ -64,7 +64,7 @@
     margin: 30px 5px 4px 5px;
     font-size: 0.93em;
     color: rgb(92, 91, 91);
-    font-family: "Kaushan Script";
+    font-family: "Architects Daughter";
 
   }
   .note .date{
@@ -75,7 +75,7 @@
     padding: 4px;
     font-size: 1em;
     color: rgb(22, 22, 22);
-    font-family: "Kaushan Script";
+    font-family: "Architects Daughter";
   }
 
 
@@ -125,13 +125,15 @@
     outline: none;
   }
 
-  footer {
-    position: absolute;
+
+  .footer {
+    position: relative;
     text-align: right;
-    bottom: 0;
-    width: 95%;
-    margin-bottom: 3px;
+    top: 0;
+    width: 100%;
+    margin:1px;
     height: 2.5rem;
     font-size: 1.5em;
-    font-family: "Kaushan Script";
+    font-family: "Architects Daughter";
+    font-stretch: expanded;
   }

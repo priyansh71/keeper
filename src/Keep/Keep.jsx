@@ -31,6 +31,7 @@ function Keep() {
   return (
     <div>
       <Header />
+      <Time />
       <CreateArea onDone={handledone} />
       <div >
       {notes.map((note, index) => (
@@ -45,7 +46,7 @@ function Keep() {
         />
       ))}
       </div>
-      <Time />
+
     </div>
   );
 }

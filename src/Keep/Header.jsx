@@ -1,11 +1,15 @@
 import React from "react";
-import BookmarkBorderOutlinedIcon from '@material-ui/icons/BookmarkBorderOutlined';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 function Header() {
   return (
     <header>
-    <BookmarkBorderOutlinedIcon style={{ fontSize : "1.8em" , color : "#fce4ec" , margin: "0px 3px"}} />
       <span>Keeper</span>
+      <span style={{position: "absolute", top: "20px", right : "15px"}}>
+        <a href="https://github.com/priyansh71" target="_blank" style={{textDecoration: null , color: "white"}}>
+          <GitHubIcon fontSize="large" />
+          </a>
+      </span>
     </header>
   );
 }
