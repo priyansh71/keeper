@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/keeper/static/css/main.adaa861d.chunk.css",
-    "main.js": "/keeper/static/js/main.e83ebf75.chunk.js",
-    "main.js.map": "/keeper/static/js/main.e83ebf75.chunk.js.map",
+    "main.css": "/keeper/static/css/main.869e0fc5.chunk.css",
+    "main.js": "/keeper/static/js/main.ea8b92b9.chunk.js",
+    "main.js.map": "/keeper/static/js/main.ea8b92b9.chunk.js.map",
     "runtime-main.js": "/keeper/static/js/runtime-main.a794a8a2.js",
     "runtime-main.js.map": "/keeper/static/js/runtime-main.a794a8a2.js.map",
     "static/js/2.a375de00.chunk.js": "/keeper/static/js/2.a375de00.chunk.js",
     "static/js/2.a375de00.chunk.js.map": "/keeper/static/js/2.a375de00.chunk.js.map",
     "index.html": "/keeper/index.html",
-    "static/css/main.adaa861d.chunk.css.map": "/keeper/static/css/main.adaa861d.chunk.css.map",
-    "static/js/2.a375de00.chunk.js.LICENSE.txt": "/keeper/static/js/2.a375de00.chunk.js.LICENSE.txt"
+    "static/css/main.869e0fc5.chunk.css.map": "/keeper/static/css/main.869e0fc5.chunk.css.map",
+    "static/js/2.a375de00.chunk.js.LICENSE.txt": "/keeper/static/js/2.a375de00.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/keeper/static/media/stacks.899a6df8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a794a8a2.js",
     "static/js/2.a375de00.chunk.js",
-    "static/css/main.adaa861d.chunk.css",
-    "static/js/main.e83ebf75.chunk.js"
+    "static/css/main.869e0fc5.chunk.css",
+    "static/js/main.ea8b92b9.chunk.js"
   ]
 }
