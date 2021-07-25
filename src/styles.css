@@ -4,136 +4,140 @@
     box-sizing: border-box;
   }
 
-  body {
-    background: rgb(247, 247, 247);
-    padding: 0 16px;
-  }
+body {
+  background-image: url('./stacks.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; 
+}
   
-  header {
-    background-color: #d81b60;
-    margin: auto -16px;
-    padding: 16px 32px;
-    font-size: 1.3em;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  }
-  
-  header span {
-    color: #fff;
-    font-family: "McLaren", cursive;
-    font-weight: 200;
-    font-size: 2em;
-  }
-  
-  .note {
-    border-radius: 12px;
-    padding: 10px;
-    width: 300px;
-    margin: 20px;
-    float: left;
-    font-size: 1.3em;
-    font-family: 'Architects Daughter';
-  }
-  .note h1 {
-    font-size: 1.3em;
-    margin: 0.4em 0.2em;
-    padding: 3px 9px;
+header {
+  background-color:linear-gradient(180deg, rgb(247, 247, 247), rgb(244, 244, 244), rgba(255,255,255,0));
+  margin: auto -16px;
+  padding: 16px 32px;
+  font-size: 1.3em;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
 
-  }
-  .note p {
-    font-size: 1.1em;
-    margin: 0.2em 0.3em;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    color:#444;
-    padding: 4px 10px;
-  }
-  
-  .note button {
-    position: relative;
-    float: right;
-    margin: 10px;
-    font-size: 0.866em;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    outline: none;
+header span {
+  color : rgb(66, 1, 1);
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+  font-size: 1.8em;
   }
 
-  .note .time{
-    float: right;
-    margin: 30px 5px 4px 5px;
-    font-size: 0.93em;
-    color: rgb(92, 91, 91);
-    font-family: "Architects Daughter";
+.note {
+  border-radius: 12px;
+  padding: 10px;
+  width: 300px;
+  margin: 20px;
+  float: left;
+  font-size: 1.3em;
+  font-family: 'Architects Daughter';
+}
 
-  }
-  .note .date{
-    position: relative;
-    top:0;
-    float: right;
-    margin: 0px 5px;
-    padding: 4px;
-    font-size: 1em;
-    color: rgb(22, 22, 22);
-    font-family: "Architects Daughter";
-  }
+.note h1 {
+  font-size: 1.3em;
+  margin: 0.4em 0.2em;
+  padding: 3px 9px;
 
+}
+.note p {
+  font-size: 1.1em;
+  margin: 0.2em 0.3em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color:#444;
+  padding: 4px 10px;
+}
 
-  form.create-note {
-    font-family: 'Architects Daughter';
-    position: relative;
-    width: 480px;
-    font-size: 1.3em;
-    margin: 30px auto 20px auto;
-    background: #fff;
-    padding: 15px;
-    border-radius: 7px;
-    box-shadow: 0 1px 5px rgb(138, 137, 137);
-  }
-  form.create-note input {
-    width: 100%;
-    border: none;
-    padding: 4px;
-    outline: none;
-    font-size: 1.2em;
-    font-family: inherit;
-    resize: none;
-    color: black
-  }
-  form.create-note textarea {
-    width: 100%;
-    border: none;
-    padding: 6px;
-    outline: none;
-    font-size: 1.2em;
-    font-family: inherit;
-    resize: none;
-    color: rgb(101, 100, 100);
-  }
-  form.create-note button {
-    position: absolute;
-    right: 18px;
-    bottom: -18px;
-    background: #d81b60;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    outline: none;
-  }
+.note button {
+  position: relative;
+  float: right;
+  margin: 10px;
+  font-size: 0.866em;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.note .time{
+  float: right;
+  margin: 30px 5px 4px 5px;
+  font-size: 0.93em;
+  color: rgb(92, 91, 91);
+  font-family: "Architects Daughter";
+
+}
+.note .date{
+  position: relative;
+  top:0;
+  float: right;
+  margin: 0px 5px;
+  padding: 4px;
+  font-size: 1em;
+  color: rgb(22, 22, 22);
+  font-family: "Architects Daughter";
+}
 
 
-  .footer {
-    position: relative;
-    text-align: right;
-    top: 0;
-    width: 100%;
-    margin:1px;
-    height: 2.5rem;
-    font-size: 1.5em;
-    font-family: "Architects Daughter";
-    font-stretch: expanded;
-  }
+form.create-note {
+  font-family: 'Architects Daughter';
+  position: relative;
+  width: 480px;
+  font-size: 1.3em;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  color: black
+}
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 6px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  color: rgb(101, 100, 100);
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #d81b60;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+
+.footer {
+  position: relative;
+  text-align: right;
+  top: 0;
+  width: 99%;
+  margin:1px;
+  height: 2.5rem;
+  font-size: 1.5em;
+  font-family: "Architects Daughter";
+  font-stretch: expanded;
+}
